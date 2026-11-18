@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Login Page</title>
+<style>
+  body{
+    margin:0;
+    font-family: Arial, sans-serif;
+  }
+  /* green background header */
+  header{
+    background-color: #2e7d32;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+  }
+  /* picture in header */
+  header img{
+    width: 100px;
+    height: 50px;
+    border: 2px solid black;
+    background: white;
+  }
+
+  /* Home About Us Contact Us */
+  nav{
+    text-align: center;
+    padding: 20px 0;
+    font-size: 20px;
+    word-spacing: 40px;
+  }
+  nav a{
+    text-decoration: none;
+    color: black;
+  }
+
+  /* background picture for the form area */
+  main{
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  /* box with shadow/border */
+  .login-box{
+    background-color: rgba(255,255,255,0.9);
+    border: 2px solid black;
+    box-shadow: 8px 8px 15px rgba(0,0,0,0.5);
+    width: 400px;
+    padding: 30px;
+  }
+
+  .field{
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+  .field label{
+    display: inline-block;
+    width: 120px;
+  }
+  .field input{
+    width: 200px;
+    height: 30px;
+    border: 2px solid black;
+  }
+
+  .buttons{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .buttons button{
+    width: 100px;
+    height: 40px;
+    border: 2px solid black;
+    background: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  /* register link */
+  .register{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+  }
+  .register a{
+    color: black;
+    text-decoration: none;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <img src="577332409_122104683951084995_4138996034994729484_n.jpeg" alt="picture">
+</header>
+
+<nav>
+  <a href="#">Home</a>
+  <a href="#">About Us</a>
+  <a href="#">Contact Us</a>
+</nav>
+
+<main>
+  <div class="login-box">
+    <div class="field">
+      <label for="username">Username:</label>
+      <input type="text" id="username">
+    </div>
+
+    <div class="field">
+      <label for="password">Password:</label>
+      <input type="password" id="password">
+    </div>
+
+    <div class="buttons">
+      <button type="submit">Log in</button>
+      <button type="button">Cancel</button>
+    </div>
+  </div>
+
+  <div class="register">
+    <a href="#">Register</a>
+  </div>
+</main>
+
+</body>
+</html>
